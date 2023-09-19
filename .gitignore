@@ -1,0 +1,8 @@
+# In any folder , any file of type...
+**/*.akd
+**/*.bnk
+**/*.prof
+
+#Ignore local-only folders
+.cache/*
+.backup/*
