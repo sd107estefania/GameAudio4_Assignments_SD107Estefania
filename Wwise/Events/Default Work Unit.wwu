@@ -3,8 +3,31 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{A7194FCF-3ECE-4907-9C2D-EEE62C9E69B5}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Skateboarding_Roll_Play" ID="{C66C08BB-C6A7-4D1D-B871-C5F3E5DF9D8B}"/>
-				<Event Name="Skateboarding_Roll_Stop" ID="{BC13C3F6-A8C0-4185-93BE-32DBC7FE6AE0}"/>
+				<Event Name="Skateboarding_Roll_Play" ID="{C66C08BB-C6A7-4D1D-B871-C5F3E5DF9D8B}">
+					<ChildrenList>
+						<Action Name="" ID="{F7F5A3D2-87C6-401F-AEC1-7E9268E4E870}" ShortID="100936900">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Skateboarding_Surfaces" ID="{1C91C5B2-14E9-4592-9853-8649C80EC1C0}" WorkUnitID="{42B761A6-1686-4942-A3B0-9B9175B583E2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Skateboarding_Roll_Stop" ID="{BC13C3F6-A8C0-4185-93BE-32DBC7FE6AE0}">
+					<ChildrenList>
+						<Action Name="" ID="{0213671E-07B0-4AE0-BB30-FA313E663DE6}" ShortID="493025760">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Skateboarding_Surfaces" ID="{1C91C5B2-14E9-4592-9853-8649C80EC1C0}" WorkUnitID="{42B761A6-1686-4942-A3B0-9B9175B583E2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
