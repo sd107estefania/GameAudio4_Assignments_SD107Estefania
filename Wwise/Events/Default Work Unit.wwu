@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{A7194FCF-3ECE-4907-9C2D-EEE62C9E69B5}" SchemaVersion="110">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{A7194FCF-3ECE-4907-9C2D-EEE62C9E69B5}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{A7194FCF-3ECE-4907-9C2D-EEE62C9E69B5}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Skateboarding_Roll_Play" ID="{C66C08BB-C6A7-4D1D-B871-C5F3E5DF9D8B}"/>
+				<Event Name="Skateboarding_Roll_Stop" ID="{BC13C3F6-A8C0-4185-93BE-32DBC7FE6AE0}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

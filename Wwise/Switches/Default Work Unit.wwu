@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{331E25E4-E965-4B70-8E6D-73AD7979C0AF}" SchemaVersion="110">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{331E25E4-E965-4B70-8E6D-73AD7979C0AF}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{331E25E4-E965-4B70-8E6D-73AD7979C0AF}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Skateboarding_Surfaces" ID="{0EFDCA5B-410C-4DCC-AC2E-2EF2D36DA343}">
+					<ChildrenList>
+						<Switch Name="Concrete" ID="{8537CB34-5913-4F3C-A186-918625407D2C}"/>
+						<Switch Name="Gravel" ID="{368AF652-AECA-42C5-86EA-3605EF0455D3}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

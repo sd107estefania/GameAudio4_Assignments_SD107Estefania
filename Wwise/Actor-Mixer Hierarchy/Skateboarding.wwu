@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{42B761A6-1686-4942-A3B0-9B9175B583E2}" SchemaVersion="110" RootDocumentID="{FEC6EB53-6856-441D-856B-69C74E878412}" ParentDocumentID="{FEC6EB53-6856-441D-856B-69C74E878412}">
+	<AudioObjects>
+		<WorkUnit Name="Skateboarding" ID="{42B761A6-1686-4942-A3B0-9B9175B583E2}" OwnerID="{FEC6EB53-6856-441D-856B-69C74E878412}" PersistMode="Nested">
+			<ChildrenList>
+				<SwitchContainer Name="Skateboarding_Surfaces" ID="{1C91C5B2-14E9-4592-9853-8649C80EC1C0}" ShortID="1056143543">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="11"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D272113-AF05-4798-BBEC-B321B6F94951}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Concrete" ID="{8537CB34-5913-4F3C-A186-918625407D2C}" WorkUnitID="{331E25E4-E965-4B70-8E6D-73AD7979C0AF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{17F68D04-2002-4456-A25D-16E64A9D64CC}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="Skateboarding_Surfaces" ID="{0EFDCA5B-410C-4DCC-AC2E-2EF2D36DA343}" WorkUnitID="{331E25E4-E965-4B70-8E6D-73AD7979C0AF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="Skateboarding_Concrete" ID="{429F5B3A-60B3-4783-A0BA-22815A783CB9}" ShortID="1004932766">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="7"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D272113-AF05-4798-BBEC-B321B6F94951}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{17F68D04-2002-4456-A25D-16E64A9D64CC}"/>
+								</Reference>
+							</ReferenceList>
+						</BlendContainer>
+						<BlendContainer Name="Skateboarding_Gravel" ID="{84CBABA5-F3C3-4BEE-B03D-2885BD53A1C5}" ShortID="956268248">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="7"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D272113-AF05-4798-BBEC-B321B6F94951}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{17F68D04-2002-4456-A25D-16E64A9D64CC}"/>
+								</Reference>
+							</ReferenceList>
+						</BlendContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Skateboarding_Concrete" ID="{429F5B3A-60B3-4783-A0BA-22815A783CB9}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Skateboarding_Gravel" ID="{84CBABA5-F3C3-4BEE-B03D-2885BD53A1C5}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Concrete" ID="{8537CB34-5913-4F3C-A186-918625407D2C}"/>
+								<ItemList>
+									<ItemRef Name="Skateboarding_Concrete" ID="{429F5B3A-60B3-4783-A0BA-22815A783CB9}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Gravel" ID="{368AF652-AECA-42C5-86EA-3605EF0455D3}"/>
+								<ItemList>
+									<ItemRef Name="Skateboarding_Gravel" ID="{84CBABA5-F3C3-4BEE-B03D-2885BD53A1C5}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
